@@ -23,10 +23,11 @@ const Navigation = () => {
   }
 
   const navLinks = [
-    { id: 'story', label: 'Story' },
-    { id: 'spaces', label: 'Spaces' },
-    { id: 'menu-section', label: 'Menu' },
-    { id: 'visit', label: 'Visit' },
+    { name: 'Story', href: '#story' },
+    { name: 'Spaces', href: '#spaces' },
+    { name: 'Menu', href: '#menu-section' },
+    { name: 'Happy Hour', href: '#happy-hour' },
+    { name: 'Visit', href: '#visit-section' },
   ]
 
   return (

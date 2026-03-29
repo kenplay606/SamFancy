@@ -14,7 +14,7 @@ const HappyHourPromo = () => {
   }
 
   return (
-    <section className="py-20 md:py-24 px-6 bg-gradient-to-br from-chinatown-red to-red-900">
+    <section id="happy-hour" className="py-20 md:py-24 px-6 bg-gradient-to-br from-chinatown-red to-red-900">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           ref={ref}
