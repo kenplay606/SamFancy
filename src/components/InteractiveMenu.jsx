@@ -93,18 +93,18 @@ export default function InteractiveMenu() {
 
               <div>
                 <SectionTitle>Draft Beer</SectionTitle>
-                <MenuItem code="B1" name="Budweiser" price="120" />
-                <MenuItem code="B2" name="Goose Island IPA" price="120" />
+                <MenuItem code="B1" name="Budweiser" price="20" />
+                <MenuItem code="B2" name="Goose Island IPA" price="70" />
 
                 <SectionTitle>Bottled Beer</SectionTitle>
-                <MenuItem code="B3" name="Corona" price="80" />
-                <MenuItem code="B4" name="Hoegaarden" price="80" />
+                <MenuItem code="B3" name="Corona" price="70" />
+                <MenuItem code="B4" name="Hoegaarden" price="70" />
                 <MenuItem code="B5" name="Hoegaarden Rosée" price="70" />
 
                 <SectionTitle>No Alcohol</SectionTitle>
-                <MenuItem code="N1" name="Arizona Ice Tea" price="70" />
-                <MenuItem code="N2" name="Coke / Zero / Soda / Tonic" price="70" />
-                <MenuItem code="N3" name="Fresh Juice" price="42" />
+                <MenuItem code="N1" name="Arizona Ice Tea" price="42" />
+                <MenuItem code="N2" name="Coke / Zero / Soda / Tonic" price="38" />
+                <MenuItem code="N3" name="Fresh Juice" price="38" />
               </div>
             </div>
           )}
@@ -121,7 +121,7 @@ export default function InteractiveMenu() {
                   <MenuItem code="A2" name="Mai Tai" description="Lime, Orgeat, Curaçao, Rum" price="118" />
                   <MenuItem code="A3" name="Saturn" description="Lemon, Falernum, Passionfruit, Orgeat, Gin" price="118" />
                   <MenuItem code="A4" name="Jungle Bird" description="Pineapple, Lime, Campari, Dark Rum" price="118" />
-                  <MenuItem code="A5" name="Bali Ball" description="Pineapple, Orange, Lime, Passionfruit, Falernum, Gin, Cognac, Rum" price="138" />
+                  <MenuItem code="A5" name="Bali Bali" description="Pineapple, Orange, Lime, Passionfruit, Falernum, Gin, Cognac, Rum" price="138" />
                 </div>
                 <div>
                   <MenuItem code="A6" name="Blue Hawaiian" description="Coconut, Pineapple, Blue Curaçao, Rum" price="118" />
@@ -138,29 +138,29 @@ export default function InteractiveMenu() {
             <div className="grid md:grid-cols-2 gap-x-8">
               <div>
                 <SectionTitle>Appetizers</SectionTitle>
-                <MenuItem name="Crab Wonton" price="42" />
-                <MenuItem name="Chinese Fried Wings" price="72" />
+                <MenuItem name="Crab Rangoon" description="Seasonal" price="82" />
                 <MenuItem name="Salt & Pepper Wings" price="72" />
-                <MenuItem name="Salt & Chilli Wings" price="50" />
-                <MenuItem name="Crispy Pork Dumpling" price="60" />
+                <MenuItem name="Buffalo Wings" price="90" />
+                <MenuItem name="Fried Pork Dumplings" price="80" />
                 <MenuItem name="Vegetable Spring Rolls" price="32" />
-                <MenuItem name="French Fries" price="42" />
-                <MenuItem name="French Fries (Tater Tots)" price="48" />
+                <MenuItem name="French Fries" price="52" />
+                <MenuItem name="Tater Tots" price="48" />
 
                 <SectionTitle>Noodles</SectionTitle>
-                <MenuItem name="Sesame Cold Noodles" price="—" />
+                <MenuItem name="Sesame Cold Noodles" price="98" />
               </div>
 
               <div>
                 <SectionTitle>Chicken</SectionTitle>
-                <MenuItem name="General Tso's Chicken" price="—" />
-                <MenuItem name="Orange Chicken" price="—" />
-                <MenuItem name="Sesame Chicken" description="Deep fried, scallion and sesame" price="—" />
+                <MenuItem name="General Tso's Chicken" price="108" />
+                <MenuItem name="Spicy Chili and Ginger" price="109" />
+                <MenuItem name="Orange Chicken" price="109" />
+                <MenuItem name="Sesame Chicken" price="98" />
 
                 <SectionTitle>Sides</SectionTitle>
-                <MenuItem name="Garlic Broccoli" price="—" />
-                <MenuItem name="White Rice" price="—" />
-                <MenuItem name="Prawn Crackers" price="—" />
+                <MenuItem name="Garlic Broccoli" price="24" />
+                <MenuItem name="White Rice" price="20" />
+                <MenuItem name="Prawn Crackers" price="20" />
               </div>
             </div>
           )}
