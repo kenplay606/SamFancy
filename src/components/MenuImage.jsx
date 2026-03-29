@@ -24,13 +24,26 @@ const MenuImage = () => {
           </h2>
 
           {/* Menu Images */}
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div
               onClick={() => setLightboxOpen(true)}
               className="relative rounded-2xl overflow-hidden cursor-pointer group"
             >
               <img
-                src="/images/menu-cocktails.jpg"
+                src="/images/menu-drinks.png"
+                alt="Drinks Menu"
+                className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <ZoomIn className="w-12 h-12 text-white" />
+              </div>
+            </div>
+            <div
+              onClick={() => setLightboxOpen(true)}
+              className="relative rounded-2xl overflow-hidden cursor-pointer group"
+            >
+              <img
+                src="/images/menu-cocktails.png"
                 alt="Cocktails Menu"
                 className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
               />
@@ -43,7 +56,7 @@ const MenuImage = () => {
               className="relative rounded-2xl overflow-hidden cursor-pointer group"
             >
               <img
-                src="/images/menu-food.jpg"
+                src="/images/menu-food.png"
                 alt="Food Menu"
                 className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
               />
@@ -74,7 +87,7 @@ const MenuImage = () => {
           >
             <div className="max-w-4xl w-full">
               <img
-                src="/images/menu-cocktails.jpg"
+                src="/images/menu-drinks.png"
                 alt="Menu"
                 className="w-full h-auto rounded-lg"
               />
