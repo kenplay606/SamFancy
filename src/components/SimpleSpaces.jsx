@@ -27,17 +27,23 @@ const SimpleSpaces = () => {
   ]
 
   return (
-    <section id="spaces" className="py-20 md:py-24 px-6 md:px-12 bg-black">
-      <div className="max-w-6xl mx-auto">
+    <section id="spaces" className="py-24 md:py-32 px-6 md:px-12 bg-black">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="font-headline text-4xl md:text-6xl text-center mb-12 text-white">
-            OUR SPACES
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="font-headline text-5xl md:text-7xl mb-4 text-white">
+              TWO FLOORS, ONE VIBE
+            </h2>
+            <div className="h-1 w-24 bg-chinatown-red mx-auto mb-6" />
+            <p className="text-xl md:text-2xl text-gray-300">
+              Different atmospheres, same unforgettable experience
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {spaces.map((space, index) => {

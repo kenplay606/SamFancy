@@ -2,8 +2,9 @@ import React from 'react'
 import Navigation from './components/Navigation'
 import SimpleHero from './components/SimpleHero'
 import SimpleStory from './components/SimpleStory'
-import HappyHourMenu from './components/HappyHourMenu'
 import SimpleSpaces from './components/SimpleSpaces'
+import OurPeople from './components/OurPeople'
+import HappyHourMenu from './components/HappyHourMenu'
 import MenuSection from './components/MenuSection'
 import SimpleVisit from './components/SimpleVisit'
 import SimpleReviews from './components/SimpleReviews'
@@ -15,10 +16,11 @@ function AppSimple() {
       <Navigation />
       <SimpleHero />
       <SimpleStory />
-      <section className="py-12 md:py-16 bg-black">
+      <SimpleSpaces />
+      <OurPeople />
+      <section className="py-12 md:py-16 bg-zinc-950">
         <HappyHourMenu />
       </section>
-      <SimpleSpaces />
       <div id="menu-section">
         <MenuSection />
       </div>
