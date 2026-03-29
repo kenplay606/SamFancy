@@ -2,54 +2,58 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const SimpleHero = () => {
-  const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+  const scrollToMenu = () => {
+    document.getElementById('menu-section')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const scrollToVisit = () => {
+    document.getElementById('visit')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black z-10" />
-      
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/bar-interior.jpg')",
+          backgroundImage: 'url(/images/bar-interior.jpg)',
         }}
-      />
+      >
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
 
-      <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 text-center">
+      {/* Content */}
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
         >
-          <h1 className="font-headline text-7xl md:text-9xl tracking-wider mb-6 text-white">
+          <h1 className="font-headline text-7xl md:text-9xl mb-6 text-white leading-tight">
             SAM FANCY
           </h1>
-          <div className="h-1 w-32 bg-chinatown-red mx-auto mb-8" />
-          <p className="text-xl md:text-2xl text-gold-accent font-light tracking-wide mb-12">
+          <p className="text-3xl md:text-4xl text-gray-200 mb-4 font-light">
+            超有氛圍嘅聚會酒吧
+          </p>
+          <p className="text-xl md:text-2xl text-gray-300 mb-12">
             A Chinatown Story in the Heart of LKF
           </p>
-        </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="flex flex-col md:flex-row gap-6"
-        >
-          <button
-            onClick={() => scrollToSection('menu-section')}
-            className="px-10 py-4 bg-chinatown-red hover:bg-red-700 text-white font-semibold tracking-wider transition-all duration-300 rounded-full text-lg"
-          >
-            SEE MENU
-          </button>
-          <button
-            onClick={() => scrollToSection('visit')}
-            className="px-10 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-black font-semibold tracking-wider transition-all duration-300 rounded-full text-lg"
-          >
-            FIND US
-          </button>
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={scrollToMenu}
+              className="bg-chinatown-red text-white font-bold text-xl px-12 py-5 rounded-full hover:bg-red-700 transition-all duration-300 shadow-2xl hover:scale-105"
+            >
+              SEE MENU
+            </button>
+            <button
+              onClick={scrollToVisit}
+              className="bg-white text-black font-bold text-xl px-12 py-5 rounded-full hover:bg-gold-accent transition-all duration-300 shadow-2xl hover:scale-105"
+            >
+              FIND US
+            </button>
+          </div>
         </motion.div>
       </div>
     </section>

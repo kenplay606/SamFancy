@@ -39,7 +39,7 @@ const SimpleVisit = () => {
   ]
 
   return (
-    <section id="visit" className="py-20 md:py-24 px-6 md:px-12 bg-zinc-950">
+    <section id="visit-section" className="py-16 md:py-20 px-6 md:px-12 bg-black border-t border-zinc-800">
       <div className="max-w-6xl mx-auto">
         <motion.div
           ref={ref}
